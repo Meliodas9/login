@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myweb">
+<head>
+	  <meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+	function usrpas(){
+	if (document.form1.txt.value == "hola" && document.form1.num.value == "hola") {window.location="https://www.rockstargames.com/es/"}
+	else {alert("contraseña o usuario incorrectos")}
+	}
+	document.oncontextmenu=new Function("return false");
+	</script>
+
+	<title>Inicio de Sesión</title>
+	<link href="Untitled-3.css" rel="stylesheet" type="text/css">
+</head>
+
+	<form name="form1">
+<h1>inicio de sesión</h1>
+<input type="text"  placeholder="usuario" name="txt"><br>
+<input type="password"  placeholder="contraseña" name="num"> <br>
+<button type="button" value="Entrar" onclick="usrpas()">Entrar</button>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+<script src="script.js"></script>
+</form>
+</body>
+</html>
